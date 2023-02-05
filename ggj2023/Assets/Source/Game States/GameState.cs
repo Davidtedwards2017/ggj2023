@@ -32,4 +32,9 @@ public class GameState : MonoBehaviour
         OnExitEvent?.Invoke();
         if (CanvasAnimator != null) CanvasAnimator.SetBool("Show", false);
     }
+
+    public virtual void Reset()
+    {
+        
+    }
 }

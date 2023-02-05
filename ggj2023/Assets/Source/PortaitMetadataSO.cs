@@ -7,4 +7,6 @@ public class PortaitMetadataSO : ScriptableObject
 {
     public string id;
     public Sprite sprite;
+    public List<PortaitMetadataSO> parents;
+    public int generation = -1;
 }
