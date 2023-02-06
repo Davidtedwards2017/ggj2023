@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Title : GameState
 {
-    public GameState GameplayState;
+    public GameState introState;
     
 
     // Update is called once per frame
@@ -14,7 +14,7 @@ public class Title : GameState
         
         if (Input.anyKeyDown)
         {
-            SetState(GameplayState);
+            SetState(introState);
         }
     }
 }

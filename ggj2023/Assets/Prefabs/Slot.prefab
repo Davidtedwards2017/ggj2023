@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9c21530c20542c0ba6eda5280dc171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  portraitDestroyedSO: {fileID: 11400000, guid: 4b38aeeb0689141a699a699445de4acc,
+    type: 2}
   portraitPlacedEventSO: {fileID: 11400000, guid: d261c711772f841a0b5a49ff6bd234f1,
     type: 2}
   portraitedGrabbebEvent: {fileID: 11400000, guid: 87dfc575dcb4d46a9ab05ea7b500bc90,
@@ -145,6 +147,6 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0

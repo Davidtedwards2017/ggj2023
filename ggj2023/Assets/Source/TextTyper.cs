@@ -87,9 +87,12 @@ public class TextTyper : MonoBehaviour
     {
         foreach (var tag in Tags)
         {
-            var open = "<" + tag + ">";
-            var close = "</"+ Regex.Match(tag, @"^([\w\-]+)").Value +">";
-            text = open + text + close;
+            if (tag != "br")
+            {
+                var open = "<" + tag + ">";
+                var close = "</"+ Regex.Match(tag, @"^([\w\-]+)").Value +">";
+                text = open + text + close;
+            }
         }
 
         return text;

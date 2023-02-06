@@ -9,8 +9,13 @@ namespace Utilites
     {
 
         private static Dictionary<string, float> RecentlyPlayed = new Dictionary<string, float>();
-        private const float MinTimeBetweenSfx = 0.05f;
+        private const float MinTimeBetweenSfx = 0.04f;
 
+        public static void Init()
+        {
+            RecentlyPlayed.Clear(); 
+        }
+        
         public static AudioSource PlaySfx(this SoundEffectData data, bool looping = false, float volume = 1)
         {
             if(data == null)

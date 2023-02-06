@@ -21,20 +21,23 @@ public class CaseFile : Singleton<CaseFile>
     // Start is called before the first frame update
     void Start()
     {
+        randSlots = new FilteredRandom<PortraitSlot>(slots, 3);
     }
 
+    public void Init()
+    {
+        requestSeedPortraits = true;
+    }
+    
     private void OnEnable()
     {
-        randSlots = new FilteredRandom<PortraitSlot>(slots, 3);
-        portraitsInitializedEventSO.Event.AddListener(OnPortraitsInitialized);
+        // portraitsInitializedEventSO.Event.AddListener(OnPortraitsInitialized);
         requestReturnToCaseFileSO.Event.AddListener(OnRequestReturnToCaseFile);
-        
-        SeedPortaits();
     }
 
     private void OnDisable()
     {
-        portraitsInitializedEventSO.Event.RemoveListener(OnPortraitsInitialized);
+        // portraitsInitializedEventSO.Event.RemoveListener(OnPortraitsInitialized);
         requestReturnToCaseFileSO.Event.RemoveListener(OnRequestReturnToCaseFile);
     }
 

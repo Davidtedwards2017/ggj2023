@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e98d96e2fd894aea89c33790a7a4c8e, type: 3}
   m_Name: Suspect 9 (invalid)
   m_EditorClassIdentifier: 
+  name: Cowboy Dot Hatt
   id: 9
-  sprite: {fileID: 21300000, guid: ec90b6ff1117e46719affc0ce5830bad, type: 3}
+  sprite: {fileID: 21300000, guid: fa4a7592a7c804df4838459e5ee85420, type: 3}
   parents: []
   generation: -1
+  traits: []

@@ -4,23 +4,10 @@ using UnityEngine;
 
 public class DialogueController : MonoBehaviour
 {
-    public DialogueSequenceSO testSequence;
     public DialogueBubble dialogueBubblePrefab;
     public Transform spawnTransform;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        StartCoroutine(RunSequence(testSequence));
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    IEnumerator RunSequence(DialogueSequenceSO seq)
+    public IEnumerator RunSequence(DialogueSequenceSO seq)
     {
         foreach (var dialogueEntry in seq.dialogue)
         {

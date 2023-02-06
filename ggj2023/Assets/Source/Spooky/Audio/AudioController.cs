@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utilites;
 
 public class AudioController : Singleton<AudioController> {
 
@@ -42,5 +43,7 @@ public class AudioController : Singleton<AudioController> {
     {
         MasterMusicVolume = StartingMusicVolume;
         MasterSfxVolume = StartingSfxVolume;
+        
+        AudioHelper.Init();
     }
 }

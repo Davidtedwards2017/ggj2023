@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utilites;
 
 public class DialogueBubble : MonoBehaviour
 { 
@@ -9,6 +10,7 @@ public class DialogueBubble : MonoBehaviour
     private IEnumerator dialogueSeq;
     public Animator animator;
     public GameObject pressAnyKeyPrompt;
+    public SoundEffectData textSound;
     
     public float despawnDelay = 1.0f;
     
@@ -17,7 +19,7 @@ public class DialogueBubble : MonoBehaviour
         // pressAnyKeyPrompt.SetActive(false);
         pressAnyKeyPrompt.SetActive(displayAnyKeyPrompt);
         animator.SetBool("show", true);
-        yield return typer.PerformTextTyping(dialogue.text);
+        yield return typer.PerformTextTyping(dialogue.text, () => textSound.PlaySfx());
         if (displayAnyKeyPrompt)
         {
             yield return pressAnyKeyPrompt.GetComponent<TextTyper>().PerformTextTyping("Press any key...");

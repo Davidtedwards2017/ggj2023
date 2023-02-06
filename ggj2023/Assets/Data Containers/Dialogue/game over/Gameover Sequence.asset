@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7189363f68b194cc4af6cab3f3c94690, type: 3}
+  m_Name: Gameover Sequence
+  m_EditorClassIdentifier: 
+  dialogue:
+  - {fileID: 11400000, guid: 12f5810eae37f4049ab3d5eeacc029e6, type: 2}
+  - {fileID: 11400000, guid: 37006c7b94c894c20883e733c8ff68fa, type: 2}
+  - {fileID: 11400000, guid: eee8434d0b5a2409aa43f79eecc09c52, type: 2}
+  - {fileID: 11400000, guid: f3c09b790bcfd4c769bcb9e97b81a769, type: 2}
+  - {fileID: 11400000, guid: a51a7d5c1c6eb4d4e870b77c620cbd07, type: 2}
+  - {fileID: 11400000, guid: ecaf2b5d925a641f4a880987d45e7727, type: 2}
+  - {fileID: 11400000, guid: b6b48b046402b431abae8db293d76226, type: 2}
+  - {fileID: 11400000, guid: 7a079f916844f42178564c180886257a, type: 2}
+  - {fileID: 11400000, guid: c3e6076240df1436c89f3a9fda72a116, type: 2}
+  - {fileID: 11400000, guid: a767410381f6a4e5bbd164adf6d7f2b6, type: 2}
+  - {fileID: 11400000, guid: 375c9d0ed2ecb4e9fb22eb8d49cb3e05, type: 2}
+  - {fileID: 11400000, guid: 62b1988d9cddd480aa6133624d734948, type: 2}
+  - {fileID: 11400000, guid: 37a3e42785af54a96a10efdde820ee85, type: 2}
+  - {fileID: 11400000, guid: adc9fa17b87d746a4af16fa7257bdee1, type: 2}
+  - {fileID: 11400000, guid: 20ff8a2f800da4f8b88a5d5610046cbd, type: 2}
+  - {fileID: 11400000, guid: 73ec334cf40dd409aa7598505aca8aca, type: 2}
+  - {fileID: 11400000, guid: 069881972a6734169ab6c83804fa343c, type: 2}
+  - {fileID: 11400000, guid: 746573285f18f4cac9e0c81e26a8974d, type: 2}
+  - {fileID: 11400000, guid: 4302e1d8a5eb542ff969e153fe6064ff, type: 2}
+  - {fileID: 11400000, guid: ca400a889dfe24cd69f9f56b4871b425, type: 2}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7189363f68b194cc4af6cab3f3c94690, type: 3}
+  m_Name: Success Sequence
+  m_EditorClassIdentifier: 
+  dialogue:
+  - {fileID: 11400000, guid: 2c10ad4d35f9547e7b84ad4eabece58a, type: 2}
+  - {fileID: 11400000, guid: 1f25058beafda4680b2133c110169d88, type: 2}
+  - {fileID: 11400000, guid: b78252fc1874a4bc8a815f60b97ab5d8, type: 2}
+  - {fileID: 11400000, guid: 582fbfa9dd62e4fb18b5ee33025af535, type: 2}
+  - {fileID: 11400000, guid: 890837c30270c4efebb4a7488b5d6ef5, type: 2}
+  - {fileID: 11400000, guid: 19409394e31d446039ce755237e04886, type: 2}
+  - {fileID: 11400000, guid: d52fe14dd71474dd0aeee9f21fef1cae, type: 2}
+  - {fileID: 11400000, guid: 70987a5ef08d745b9929ddc4913fd01e, type: 2}

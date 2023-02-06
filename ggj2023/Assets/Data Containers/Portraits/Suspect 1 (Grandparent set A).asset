@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e98d96e2fd894aea89c33790a7a4c8e, type: 3}
   m_Name: Suspect 1 (Grandparent set A)
   m_EditorClassIdentifier: 
+  name: Gulliver Turduken
   id: 1
-  sprite: {fileID: 21300000, guid: 615a0aa8d2f7543f8856ef72689dd349, type: 3}
+  sprite: {fileID: 21300000, guid: ec90b6ff1117e46719affc0ce5830bad, type: 3}
   parents: []
   generation: 2
+  traits: []

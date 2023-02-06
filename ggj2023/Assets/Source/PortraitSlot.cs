@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PortraitSlot : MonoBehaviour
 {
+    public PortraitEventSO portraitDestroyedSO;
     public PortraitEventSO portraitPlacedEventSO;
     public PortraitEventSO portraitedGrabbebEvent;
     public Portrait attachedPortrait;
@@ -18,11 +19,13 @@ public class PortraitSlot : MonoBehaviour
     private void OnEnable()
     {
         portraitedGrabbebEvent.Event.AddListener(OnPortraitGrabbed);
+        portraitDestroyedSO.Event.AddListener(OnPortraitDestroyed);
     }
 
     private void OnDisable()
     {
         portraitedGrabbebEvent.Event.RemoveListener(OnPortraitGrabbed);
+        portraitDestroyedSO.Event.RemoveListener(OnPortraitDestroyed);
     }
 
     private void OnPortraitGrabbed(Portrait portrait)
@@ -32,7 +35,14 @@ public class PortraitSlot : MonoBehaviour
             Debug.Log(gameObject.name + " detaching " + attachedPortrait.name);
             attachedPortrait = null;
         }
-        
+    }
+
+    private void OnPortraitDestroyed(Portrait portrait)
+    {
+        if (attachedPortrait == portrait)
+        {
+            attachedPortrait = null;
+        }
     }
 
     // Update is called once per frame

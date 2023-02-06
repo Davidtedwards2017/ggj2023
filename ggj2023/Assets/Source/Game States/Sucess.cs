@@ -6,21 +6,21 @@ using UnityEngine;
 public class Sucess : GameState
 {
     public SimpleEventSO successEventSO;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    public GameState creditsState;
+    public DialogueController dialogueController;
+    public DialogueSequenceSO successDialogueSequence;
+    
     public override void Enter()
     {
         base.Enter();
         successEventSO.Raise();
+        
+        StartCoroutine(SuccessSequence());
+    }
+
+    private IEnumerator SuccessSequence()
+    {
+        yield return dialogueController.RunSequence(successDialogueSequence);
+        SetState(creditsState);
     }
 }

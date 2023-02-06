@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e98d96e2fd894aea89c33790a7a4c8e, type: 3}
   m_Name: Suspect 4 (Grandparent set B)
   m_EditorClassIdentifier: 
+  name: Norris Von Chuckles
   id: 4
-  sprite: {fileID: 21300000, guid: 316d118f86528487cb561565e109526b, type: 3}
+  sprite: {fileID: 21300000, guid: a01f41deeec7b4cff9317f0b43d579f5, type: 3}
   parents: []
   generation: 2
+  traits: []
