@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utilites;
 
 public class Processing : GameState
 {
+    public SoundEffectData SFX;
     public GameState failedState;
     public GameState successState;
 
@@ -13,6 +15,7 @@ public class Processing : GameState
     public override void Enter()
     {
         base.Enter();
+        SFX.PlaySfx();
         StartCoroutine(processingSequence());
     }
 

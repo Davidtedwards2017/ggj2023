@@ -421,9 +421,12 @@ MonoBehaviour:
       m_Calls: []
   CanvasAnimator: {fileID: 0}
   Active: 0
+  SFX:
+    Clip: {fileID: 8300000, guid: 32a0b06a53a704168ae3f611c0774be5, type: 3}
+    Volume: 1
   failedState: {fileID: 1070847689}
   successState: {fileID: 1764196373}
-  processingTime: 2
+  processingTime: 7
   solutionChecker: {fileID: 1570153717}
 --- !u!4 &169094323
 Transform:
@@ -826,6 +829,7 @@ MonoBehaviour:
   clearAllEventSO: {fileID: 11400000, guid: e3a63a83fead9408aaeba2680abcfe74, type: 2}
   NextState: {fileID: 1205359922}
   HoldTime: 0.01
+  musicTrack: {fileID: 8300000, guid: 3d6d15975ff7646bca51b8ddeb3384cd, type: 3}
 --- !u!4 &384783032
 Transform:
   m_ObjectHideFlags: 0
@@ -1563,6 +1567,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  musicTrack: {fileID: 8300000, guid: 6d4ef872e41434d918c715bc26045579, type: 3}
   processingState: {fileID: 169094322}
 --- !u!4 &614979185
 Transform:
@@ -3195,10 +3200,11 @@ MonoBehaviour:
   CreditsTextTyper: {fileID: 1331516627}
   creditsDialogue: {fileID: 11400000, guid: b75cab306449d4f65af2e37746c9680a, type: 2}
   textCanvasGroup: {fileID: 1331516623}
+  musicTrack: {fileID: 8300000, guid: ce4610394b3994199954ebe46760e513, type: 3}
   timeBeforeText: 1
-  timeForText: 6
+  timeForText: 5
   timeFadeDuration: 2
-  timeAfterText: 4
+  timeAfterText: 3
 --- !u!1 &1061569820
 GameObject:
   m_ObjectHideFlags: 0
@@ -3388,6 +3394,7 @@ MonoBehaviour:
   failedEventSO: {fileID: 11400000, guid: 597340f1ce8394bdd93c80acda53fa6a, type: 2}
   failedCount: 0
   maxFailCount: 3
+  gameoverMusic: {fileID: 0}
   returnToGameplayEventSO: {fileID: 11400000, guid: 3e6949b24c2984dfa870ec4ba5745ff0,
     type: 2}
   gameoverEventSO: {fileID: 11400000, guid: 68046c564e2c7405aad7de91a03c37dd, type: 2}

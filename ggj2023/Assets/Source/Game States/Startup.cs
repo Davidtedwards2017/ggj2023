@@ -8,10 +8,13 @@ public class Startup : GameState
     
     public GameState NextState;
     public float HoldTime = 2.0f;
+
+    public AudioClip musicTrack;
     public override void Enter()
     {
         base.Enter();
         clearAllEventSO.Raise();
+        MusicController.Instance.Play(musicTrack);
         StartCoroutine(TransitionToNextState());
     }
 

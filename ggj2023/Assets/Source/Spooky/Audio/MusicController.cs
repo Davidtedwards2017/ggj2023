@@ -32,11 +32,16 @@ public class MusicController : Singleton<MusicController> {
             OldAudioSource.DOFade(0, FadeOutTime).OnComplete(() => Destroy(OldAudioSource.gameObject));
         }
 
-        CurrentAudioSource = StartNewMusicSource(musicClip);
+        if (musicClip != null)
+        {
+            CurrentAudioSource = StartNewMusicSource(musicClip);
+        }
     }
 
     private AudioSource StartNewMusicSource(AudioClip clip)
     {
+        if (clip == null) return null;
+        
         GameObject obj = new GameObject(clip.name);
         obj.transform.SetParent(transform);
 

@@ -14,6 +14,7 @@ public class Failed : GameState
     public int maxFailCount = 3;
 
 
+    public AudioClip gameoverMusic;
     
     
     public SimpleEventSO returnToGameplayEventSO;

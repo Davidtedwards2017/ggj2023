@@ -12,6 +12,7 @@ public class GamePlay : GameState
     public UnityEvent OnReadyToProcessEvent;
     public UnityEvent OnNotReadyToProcessEvent;
 
+    public AudioClip musicTrack;
 
     public GameState processingState;
     
@@ -27,6 +28,12 @@ public class GamePlay : GameState
         ReadyToCalculateEventSO.Event.RemoveListener(ReadyToCalculate);
         NotReadyToCalculateEventSO.Event.RemoveListener(NotReadyToCalculate);
         OnConfrimSelectionSO.Event.RemoveListener(OnConfirmSelection);
+    }
+
+    public override void Enter()
+    {
+        base.Enter();
+        MusicController.Instance.Play(musicTrack);
     }
 
     private void ReadyToCalculate()
