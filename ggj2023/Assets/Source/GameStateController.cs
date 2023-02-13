@@ -22,4 +22,12 @@ public class GameStateController : Singleton<GameStateController>
         m_currentState = state;
         if (m_currentState) m_currentState.Enter();
     }
+
+    public void Reset()
+    {
+        foreach (var gameState in GetComponentsInChildren<GameState>(false))
+        {
+            gameState.Reset();
+        }
+    }
 }

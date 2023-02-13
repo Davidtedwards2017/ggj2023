@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e98d96e2fd894aea89c33790a7a4c8e, type: 3}
+  m_Name: Main Suspect
+  m_EditorClassIdentifier: 
+  name: Fankle the Threethief of Expis 9
+  id: 0
+  sprite: {fileID: 0}
+  parents: []
+  generation: 0
+  traits:
+  - {fileID: 11400000, guid: daac4da7b231a40b2a974519ee403638, type: 2}
+  - {fileID: 11400000, guid: 3cc84fc5f53354ff7a48363e59fd7546, type: 2}
+  - {fileID: 11400000, guid: 59a3aad0d25394b709b07b1c7cd61626, type: 2}
+  - {fileID: 11400000, guid: 6422bf24dac4f4927880ba8343f3de53, type: 2}
+  - {fileID: 11400000, guid: 106305ab4f8b34177842901fd5421030, type: 2}

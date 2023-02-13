@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc0c838749834e278aad3ae2379b5e3, type: 3}
   m_Name: fail 2 entry 11
   m_EditorClassIdentifier: 
-  text: your...
+  text: time.

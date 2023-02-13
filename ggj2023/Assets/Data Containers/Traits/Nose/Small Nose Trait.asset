@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c86ae54aaf784d15a3af6bd6f8877e3, type: 3}
   m_Name: Small Nose Trait
   m_EditorClassIdentifier: 
+  displayText: 'NOSE: small'
   quips: []

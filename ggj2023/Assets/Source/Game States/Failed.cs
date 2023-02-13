@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utilites;
 
 public class Failed : GameState
 {
@@ -15,7 +16,7 @@ public class Failed : GameState
 
 
     public AudioClip gameoverMusic;
-    
+    public SoundEffectData SFX;
     
     public SimpleEventSO returnToGameplayEventSO;
     public SimpleEventSO gameoverEventSO;
@@ -42,6 +43,7 @@ public class Failed : GameState
         failedEventSO.Raise();
         base.Enter();
 
+        SFX.PlaySfx();
         failedCount++;
         if (failedCount >= maxFailCount)
         {

@@ -17,4 +17,9 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: a01f41deeec7b4cff9317f0b43d579f5, type: 3}
   parents: []
   generation: 2
-  traits: []
+  traits:
+  - {fileID: 11400000, guid: 47d8f15a57592470ab9dca2a4a27cbb5, type: 2}
+  - {fileID: 11400000, guid: 1c91ae4c4e90043c78897d641a730aff, type: 2}
+  - {fileID: 11400000, guid: 59a3aad0d25394b709b07b1c7cd61626, type: 2}
+  - {fileID: 11400000, guid: 44876bdb846fa4ba0bba1efb5f4907db, type: 2}
+  - {fileID: 11400000, guid: 106305ab4f8b34177842901fd5421030, type: 2}

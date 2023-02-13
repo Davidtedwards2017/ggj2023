@@ -12,9 +12,11 @@ public class GamePlay : GameState
     public UnityEvent OnReadyToProcessEvent;
     public UnityEvent OnNotReadyToProcessEvent;
 
-    public AudioClip musicTrack;
+    public AudioClip[] musicTrack;
 
     public GameState processingState;
+    public Failed failedState;
+    
     
     private void OnEnable()
     {
@@ -33,7 +35,7 @@ public class GamePlay : GameState
     public override void Enter()
     {
         base.Enter();
-        MusicController.Instance.Play(musicTrack);
+        MusicController.Instance.Play(musicTrack[failedState.failedCount]);
     }
 
     private void ReadyToCalculate()

@@ -13,7 +13,10 @@ public class Portrait : MonoBehaviour
     public PortaitMetadataSO portraitMetadata;
     public PortraitEventSO requestReturnToCaseFileSO;
     public PortraitEventSO portraitDestroyedEventSO;
+    
     public float moveSpeed = 5.0f;
+
+    public Animator animator;
 
     public TMP_Text text;
     public SpriteRenderer portraitSprite;
@@ -27,6 +30,16 @@ public class Portrait : MonoBehaviour
         portraitMetadata = metadata;
         text.text = portraitMetadata.id;
         portraitSprite.sprite = portraitMetadata.sprite;
+    }
+
+    public void Grab()
+    {
+        animator.SetBool("grabbed", true);
+    }
+
+    public void LetGo()
+    {
+        animator.SetBool("grabbed", false);
     }
 
     public void DragPosition(Vector3 position)

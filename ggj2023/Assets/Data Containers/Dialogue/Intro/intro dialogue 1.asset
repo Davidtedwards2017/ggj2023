@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc0c838749834e278aad3ae2379b5e3, type: 3}
   m_Name: intro dialogue 1
   m_EditorClassIdentifier: 
-  text: Grab a cup of turbotime juice, gumshoe.
+  text: Grab a mug of turbotime juice, gumshoe.

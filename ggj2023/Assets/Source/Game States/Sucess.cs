@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Pathfinding;
 using UnityEngine;
+using Utilites;
 
 public class Sucess : GameState
 {
@@ -9,10 +10,12 @@ public class Sucess : GameState
     public GameState creditsState;
     public DialogueController dialogueController;
     public DialogueSequenceSO successDialogueSequence;
+    public SoundEffectData SFX;
     
     public override void Enter()
     {
         base.Enter();
+        SFX.PlaySfx();
         successEventSO.Raise();
         
         StartCoroutine(SuccessSequence());

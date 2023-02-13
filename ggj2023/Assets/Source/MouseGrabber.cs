@@ -4,13 +4,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
 using UnityEngine.EventSystems;
+using Utilites;
 
 public class MouseGrabber : MonoBehaviour
 {
     public PortraitEventSO portraitGrabbedEventSO;
+    public PortraitEventSO portraitLetGoEventSO;
     private Portrait selectedPortrait;
 
+    public SoundEffectData grabbedSFX;
+    public SoundEffectData pinSFX;
     private float rayDistance = 100;
+    
     // Update is called once per frame
     void Update()
     {
@@ -22,8 +27,13 @@ public class MouseGrabber : MonoBehaviour
                 if (draggable)
                 {
                     selectedPortrait = draggable.GetComponent<Portrait>();
-                    portraitGrabbedEventSO.Raise(selectedPortrait);
-                    Cursor.visible = false;
+                    if (selectedPortrait)
+                    {
+                        selectedPortrait.Grab();
+                        grabbedSFX.PlaySfx();
+                        portraitGrabbedEventSO.Raise(selectedPortrait);
+                        Cursor.visible = false;
+                    }
                 }
             }
         }
@@ -35,16 +45,21 @@ public class MouseGrabber : MonoBehaviour
                 if (slot)
                 {
                     PortraitSlot portraitSlot = slot.GetComponent<PortraitSlot>();
+                    selectedPortrait.LetGo();
+                    portraitLetGoEventSO.Raise(selectedPortrait);
                     if (portraitSlot.AlreadyOccupied())
                     {
                         portraitSlot.EjectOccupied();
                     }
-                    
+
+                    pinSFX.PlaySfx();
                     portraitSlot.Attach(selectedPortrait);
                 }
                 else
                 {
                     selectedPortrait.PutBackInCaseFile();
+                    portraitLetGoEventSO.Raise(selectedPortrait);
+                    selectedPortrait.LetGo();
                 }
                 
                 selectedPortrait = null;
@@ -61,6 +76,8 @@ public class MouseGrabber : MonoBehaviour
             Vector3 worldPosition = Camera.main.ScreenToWorldPoint(position);
             selectedPortrait.DragPosition(new Vector3(worldPosition.x, worldPosition.y, -0.25f));
         }
+        
+        
     }
 
     private GameObject CastRay(string tag)
